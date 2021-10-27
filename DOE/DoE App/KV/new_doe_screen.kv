@@ -1,0 +1,13 @@
+<NewDoeScreen>:
+    BoxLayout:
+        orientation:"vertical"
+        id: new_doe_faktor_name
+        Spinner:
+            size_hint_y: None
+            name: "faktor_spinner"
+            id: faktor_spinner
+            text: "Faktoren"
+            values: ["4","5","6","7","8","9","10"]
+        Button:
+            text: "Your are at the NEW DOE SCREEN"
+            on_release: app.add_factor_names(faktor_spinner.text)

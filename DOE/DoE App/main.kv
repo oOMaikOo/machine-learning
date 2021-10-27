@@ -1,0 +1,19 @@
+#:include KV/homescreen.kv
+#:include KV/seeting_screen.kv
+#:include KV/new_doe_screen.kv
+#:import FadeTransition kivy.uix.screenmanager.FadeTransition
+
+GridLayout:
+    cols: 1
+    ScreenManager:
+        transition: FadeTransition()
+        id: screen_manager
+        HomeScreen:
+            name: "home_screen"
+            id: home_screen
+        NewDoeScreen:
+            name: "new_doe_screen"
+            id: new_doe_screen
+        SettingScreen:
+            name: "setting_screen"
+            id: setting_screen

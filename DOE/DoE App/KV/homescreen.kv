@@ -1,0 +1,12 @@
+<HomeScreen>:
+    BoxLayout:
+        orientation:"vertical"
+        Button:
+            text: "Neue DOE Anlegen"
+            on_release: app.change_screen("new_doe_screen")
+        Button:
+            text: "Settings"
+            on_release: app.change_screen("setting_screen")
+        Button:
+            text: "Beenden"
+            on_press: app.stop()
